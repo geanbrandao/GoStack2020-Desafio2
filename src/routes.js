@@ -5,6 +5,6 @@ import SessionController from './app/controllers/SessionController';
 const routes = new Router();
 
 // login
-routes.get('/signin', SessionController.create);
+routes.post('/signin', SessionController.store);
 
 export default routes;
